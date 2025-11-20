@@ -1,33 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Daniel Thomas</title>
-  <link rel="icon" type="image/x-icon" href="./sitelogo.jpg">
-  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="./sitelogo.jpg" />
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <header>
     <nav>
       <h1 class="logo">Daniel Thomas</h1>
+
       <ul class="nav-links" id="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-      <div class="hamburger" id="hamburger">
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
         <span></span>
         <span></span>
         <span></span>
-      </div>
+      </button>
     </nav>
   </header>
 
   <section id="home" class="hero">
     <h2>Hello, my name is <span>Daniel Thomas</span>.</h2>
-    <p>Aspiring Cybersecurity Analyst.</p>
+    <p>SOC Analyst</p>
     <a href="#projects" class="btn">View My Work</a>
   </section>
 
@@ -35,38 +38,42 @@
     <h2>About Me</h2>
     <p>
       I’m passionate about cybersecurity, reverse engineering, and building tools that solve real-world problems.
-      I'm an enthusiastic IT professional with hands-on experience in Windows,
-      Linux, Active Directory, and network troubleshooting. Completed
-      PJPT and PWPA certifications through TCM Security with practical
-      exposure to Nmap, Burp Suite, Wireshark, and DFIR tools. Seeking
-      a junior cybersecurity or SOC analyst role to apply my technical
-      skills and passion for security.
+      I'm an enthusiastic IT professional with hands-on experience in Windows, Linux, Active Directory, and
+      network troubleshooting. Completed PJPT and PWPA certifications through TCM Security with practical
+      exposure to Nmap, Burp Suite, Wireshark, and DFIR tools. Seeking a junior cybersecurity or SOC analyst
+      role to apply my technical skills and passion for security.
     </p>
   </section>
 
   <section id="tech-stack">
     <h2>Technical Skills</h2>
+
     <div class="skills-grid">
       <div class="skill-card">
         <h3>Programming & Scripting</h3>
         <p>Python, C/C++, JavaScript, SQL, KQL, PowerShell, Bash</p>
       </div>
+
       <div class="skill-card">
         <h3>Security & Analysis</h3>
         <p>Burp Suite, Wireshark, Brim, Nmap, Metasploit, Nessus, Hydra</p>
       </div>
+
       <div class="skill-card">
         <h3>SIEM & Monitoring</h3>
         <p>Splunk, ELK Stack, Graylog</p>
       </div>
+
       <div class="skill-card">
         <h3>Reverse Engineering</h3>
         <p>IDA Pro, Ghidra, x64dbg, OllyDbg</p>
       </div>
+
       <div class="skill-card">
         <h3>Systems & Networking</h3>
         <p>Windows & Linux Administration, Active Directory, Proxmox, VMware, VirtualBox</p>
       </div>
+
       <div class="skill-card">
         <h3>Version Control & Workflow</h3>
         <p>Git, GitHub</p>
@@ -76,53 +83,56 @@
 
   <section id="certifications">
     <h2>Certifications</h2>
+
     <div class="certifications-grid">
       <div class="cert-card">
         <h3>CompTIA A+</h3>
         <p>CompTIA</p>
         <p>May 2025</p>
       </div>
+
       <div class="cert-card">
         <h3>Practical Junior Penetration Tester (PJPT)</h3>
         <p>TCM Security</p>
         <p>June 2025</p>
       </div>
+
       <div class="cert-card">
         <h3>Practical Web Penetration Analyst (PWPA)</h3>
         <p>TCM Security</p>
         <p>June 2025</p>
       </div>
+
       <div class="cert-card">
         <h3>SAL1 (Security Analyst Level 1)</h3>
         <p>TryHackMe</p>
         <p>July 2025</p>
       </div>
+
       <div class="cert-card">
         <h3>AZ-900</h3>
         <p>Microsoft</p>
         <p>Sept 2025</p>
       </div>
+
       <div class="cert-card">
         <h3>CompTIA Security+</h3>
         <p>CompTIA</p>
         <p>Sept 2025</p>
       </div>
+
       <div class="cert-card">
-        <h3>Next Cert TDB</h3>
-        <p></p>
-        <p></p>
+        <h3>Next Cert TBD</h3>
       </div>
     </div>
   </section>
 
   <section id="projects">
     <h2>Projects</h2>
+
     <div class="project-grid">
       <div class="project-card">
-        <h3></h3>
-        <p>
-          Featured projects will be added shortly. In the meantime, you can explore some of my work on my GitHub:
-        </p>
+        <p>View my projects on GitHub!</p>
         <a href="https://github.com/0x00-V" target="_blank" class="btn">Check out my GitHub!</a>
       </div>
     </div>
@@ -132,16 +142,21 @@
     <h2>Contact</h2>
     <p>
       Reach out via
-      <a href="https://www.linkedin.com/in/daniel-thomas-bb0462308/" style="text-decoration: none; color: var(--accent);">LinkedIn</a>.
+      <a href="https://www.linkedin.com/in/daniel-thomas-bb0462308/"
+         class="link-blue"
+         target="_blank">
+        LinkedIn
+      </a>.
     </p>
   </section>
 
   <script>
-    const hamburger = document.getElementById('hamburger');
-    const navLinks = document.getElementById('nav-links');
-    hamburger.addEventListener('click', () => {
-      navLinks.classList.toggle('show');
-      hamburger.classList.toggle('active');
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("nav-links");
+
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("show");
+      hamburger.classList.toggle("active");
     });
   </script>
 </body>
